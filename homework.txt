@@ -1,0 +1,7 @@
+Task 1
+// create methods and buttons for decrement for the components :
+// LifecycleClassComponent and LifecycleFuncComponent
+
+Task 2
+// create custom increment method instead of + 10
+// to get the value from props
