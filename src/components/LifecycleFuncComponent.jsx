@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 
 const LifecycleFuncComponent = () => {
@@ -15,11 +15,25 @@ const LifecycleFuncComponent = () => {
     console.log("render")    
     console.log("counter", counter)    
 
-    
+    console.log("like a constructor")
+
+    const [todos, setTodos] = useState([])
+
+    useEffect(() => {
+        // not with every rerender
+        console.log("like a componetDidMount")
+        fetch('https://jsonplaceholder.typicode.com/todos?_limit=10')
+            .then(response => response.json())
+            .then(json => setTodos(json))
+
+        return () => {
+            console.log("like a componentWillUnmount")
+        }
+    },[])
 
     return <div>
         counter : {counter}
-
+        <pre>{JSON.stringify(todos, null, 2)}</pre>
         <br />
         <button onClick={increment}>Increment</button>
         <button 

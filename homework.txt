@@ -3,5 +3,21 @@ Task 1
 // LifecycleClassComponent and LifecycleFuncComponent
 
 Task 2
-// create custom increment method instead of + 10
+// create custom increment method instead of + 10 to + n
 // to get the value from props
+
+function incremet ( toIncrement, incrementor) {
+    return toIncrement + incrementor
+}
+
+Task 3
+// iterate over the todos in LifecycleFuncComponent
+// tips: create todos component and map through the todos
+    // task 3 subtask 1
+// print only the completed : false todos
+    // task 3 subtask 2
+// print the todos , completed in red with strikethrouh
+// pront the todos , completed : false with green color
+// <li>todo completed (in red color with strikethorugh)</li>
+// <li>todo not completed (in green color)</li>
+

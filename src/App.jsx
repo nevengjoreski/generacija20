@@ -8,7 +8,7 @@ const App = () => {
 
   return (<>
     <LifecycleFuncComponent />
-    { shoudShow && <LifecycleClassComponent />}
+    {/* { shoudShow && <LifecycleClassComponent />} */}
     
     <button 
       onClick={() => setShouldShow(!shoudShow)}
