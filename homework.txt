@@ -4,11 +4,7 @@ Task 1
 
 Task 2
 // create custom increment method instead of + 10 to + n
-// to get the value from props
-
-function incremet ( toIncrement, incrementor) {
-    return toIncrement + incrementor
-}
+// n comes from the input field
 
 Task 3
 // iterate over the todos in LifecycleFuncComponent
