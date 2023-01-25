@@ -8,3 +8,37 @@ nav {
   display: flex;
   justify-content: space-around;
 }
+
+.ex5 .parent {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+.ex5 header {
+  background: lightblue;
+
+  padding: 2rem;
+  grid-column: 1 / 4;
+}
+
+.ex5 .left-side {
+  grid-column: 1 / 2;
+}
+
+.ex5 main {
+  background: coral;
+
+  grid-column: 2 / 3;
+}
+
+.ex5 .right-side {
+  background: yellow;
+
+  grid-column: 3 / 4;
+}
+
+.ex5 footer {
+  background: wheat;
+
+  grid-column: 1 / 4;
+}
