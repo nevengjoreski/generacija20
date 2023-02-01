@@ -22,6 +22,7 @@ const App = () => {
     //   .then((data) => setPosts(data));
 
     callPost();
+    callPost();
   }, []);
 
   return (

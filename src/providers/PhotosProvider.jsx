@@ -10,6 +10,7 @@ export const PhotosContext = createContext(null);
 
 export const PhotosProvider = ({ children }) => {
   const [photos, setPhotos] = useState([]);
+  const [selectedPhotoId, setSelectedPhotoId] = useState(null);
 
   useEffect(() => {
     fetch(API_URL + "/photos?_limit=" + PHOTOS_LIMIT)
@@ -21,7 +22,9 @@ export const PhotosProvider = ({ children }) => {
   const value = {
     photos,
     boi,
-    setPhotos
+    setPhotos,
+    setSelectedPhotoId,
+    selectedPhotoId,
   };
 
   return (
