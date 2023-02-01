@@ -1,8 +1,10 @@
+import { Hello } from "./components/Hello";
+
 const App = () => {
   return (
     <>
       <div>
-        <div></div>
+        <Hello />
       </div>
     </>
   );
